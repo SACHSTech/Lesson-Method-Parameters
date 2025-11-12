@@ -1,10 +1,8 @@
 # Methods with Parameters
 
-So far, the methods we have written always did the same thing every time they were called.  
-If we wanted slightly different behaviour, we would have needed separate methods or repeated code.
+So far, the methods we have written always did the same thing every time they were called. If we wanted slightly different behaviour, we would have needed separate methods or repeated code.
 
-To make methods more flexible, we use **parameters**.  
-A parameter allows us to send a **value** into a method so the method can *use* that value when it runs.
+To make methods more flexible, we use **parameters**. A parameter allows us to send a **value** into a method so the method can *use* that value when it runs.
 
 For example, we may want to draw a line of stars:
 
@@ -12,7 +10,8 @@ For example, we may want to draw a line of stars:
 *****
 ```
 
-But how long should the line be?  
+But how long should the line be? 
+
 3? 10? 50?
 
 Without parameters, we might end up writing many nearly identical methods:
@@ -31,9 +30,9 @@ private void drawLine12() {
 }
 ```
 
-This is still repetition.
+This is still repetitive.
 
-Instead, we write one method with a **parameter**:
+Instead, we can write one method using a **parameter**:
 
 ```java
 private void drawLine(int length) {
@@ -54,8 +53,7 @@ drawLine(3);   // ***
 
 ## What Is a Parameter?
 
-A **parameter** is a variable listed inside the method parentheses.  
-It receives a value when the method is called.
+A **parameter** is a variable listed inside the method parentheses. It receives a value when the method is called.
 
 In the example below:
 
@@ -66,14 +64,14 @@ private void drawLine(int length)
 - `int` is the **data type** the method expects
 - `length` is the **parameter variable** that will store the value passed in
 
-When we call the method:
+When we call the method with:
 
 ```java
 drawLine(8);
 ```
 
 - `8` is the **argument** (the actual value sent into the method)
-- inside the method, `length` becomes `8` for that call
+- and inside the method, `length` becomes `8` for that call
 
 You can think of a parameter as a blank that must be filled in:
 
@@ -114,14 +112,14 @@ public void run() {
 }
 ```
 
-If the variable type matches the expected parameter type, the call is valid.  
-Here, `width` is an `int`, which matches the parameter type in `drawLine(int length)`.
+If the variable type matches the expected parameter type, the call is valid. Here, `width` is an `int`, which matches the parameter type in `drawLine(int length)`.
 
 However, since user input can be unpredictable, it is good practice to **validate** or **clean up** the input before using it.
 
 ### Checking for Edge Cases
 
 When we use parameters, Java expects the value type to match exactly — but the *meaning* of the value is up to us to check.  
+
 For example, a negative width doesn’t make sense for a line.
 
 We can prevent invalid input by adding a simple check:
@@ -143,6 +141,7 @@ This ensures the method is only called with valid input.
 ### Cleaning Up Text Input
 
 When working with `String` parameters, we may want to clean or adjust user input before passing it to a method.  
+
 For example, trimming spaces or converting to a consistent case:
 
 ```java
@@ -342,7 +341,7 @@ Code
 ```
 
 
-## Problem 2 — Draw a Line of Characters
+### Problem 2 — Draw a Line of Characters
 Write a method that prints a line made up of a character repeated `n` times.
 
 ```java
@@ -364,7 +363,7 @@ public class Problem2 extends ConsoleProgram {
 ----------
 ```
 
-## Problem 3 — Personalized Greeting
+### Problem 3 — Personalized Greeting
 Write a method that prints a greeting to a person, repeated as many times as you specify.
 
 ```java
@@ -390,7 +389,7 @@ Hello, Bob!
 Hello, Bob!
 ```
 
-## Problem 4 — Only Evens
+### Problem 4 — Only Evens
 Write a method that prints all even numbers up to a given number.
 
 ```java
@@ -411,7 +410,7 @@ public class Problem4 extends ConsoleProgram {
 ```
 
 
-## Problem 5 — Triangle of Symbols
+### Problem 5 — Triangle of Symbols
 Write a method that prints a right triangle made of any symbol.
 
 ```java
@@ -434,7 +433,7 @@ public class Problem5 extends ConsoleProgram {
 ####
 ```
 
-## Problem 6 — Hollow Diamond
+### Problem 6 — Hollow Diamond
 Write a method that prints a simple hollow diamond using spaces and `*`.  
 Both halves depend on the given height.
 
@@ -459,7 +458,7 @@ public class Problem6 extends ConsoleProgram {
   *
 ```
 
-## Problem 7 — Word Triangle
+### Problem 7 — Word Triangle
 Write a method that prints a word as a triangle, one more character per line.
 
 ```java
@@ -482,7 +481,7 @@ COD
 CODE
 ```
 
-## Problem 8 — Safe Divider
+### Problem 8 — Safe Divider
 Write a method that divides one number by another, but checks for division by zero first.
 
 ```java
@@ -504,7 +503,7 @@ Result: 5
 Error: cannot divide by zero.
 ```
 
-## Problem 9 — Number Pattern
+### Problem 9 — Number Pattern
 Write a method that takes two integers: a **start** and an **end**.  
 It prints all numbers from start to end inclusive.  
 If `start` is greater than `end`, print them in reverse order.
@@ -529,7 +528,7 @@ public class Problem9 extends ConsoleProgram {
 ```
 
 
-## Problem 10 — Grade Bar Graph (Challenge)
+### Problem 10 — Grade Bar Graph (Challenge)
 Write a method that prints a small bar graph for scores, right-aligning names and truncating long ones.  
 Each bar should be a line of `#` characters equal to the score divided by 10.
 
