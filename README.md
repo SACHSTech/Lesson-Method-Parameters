@@ -440,17 +440,18 @@ public class Problem5 extends ConsoleProgram {
 ```
 <br>
 
-### Problem 6 — Hollow Diamond
-Write a method that prints a simple hollow diamond using spaces and `*`.  
-Both halves depend on the given height.
+### Problem 6 — Centered Pyramid
+Write a method that prints a centered pyramid of `*` characters.  
+The pyramid’s height should come from a parameter.  
+Each row should be centered relative to the bottom.
 
 ```java
 public class Problem6 extends ConsoleProgram {
     public void run() {
-        drawDiamond(3);
+        drawPyramid(5);
     }
 
-    private void drawDiamond(int height) {
+    private void drawPyramid(int height) {
         // TODO
     }
 }
@@ -458,12 +459,13 @@ public class Problem6 extends ConsoleProgram {
 
 **Expected Output:**
 ```
-  *
- * *
-*   *
- * *
-  *
+    *
+   ***
+  *****
+ *******
+*********
 ```
+
 <br>
 
 ### Problem 7 — Word Triangle

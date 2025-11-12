@@ -1,9 +1,9 @@
 public class Problem6 extends ConsoleProgram {
     public void run() {
-        drawDiamond(3);
+        drawPyramid(5);
     }
 
-    private void drawDiamond(int height) {
+    private void drawPyramid(int height) {
         // TODO
     }
 }
