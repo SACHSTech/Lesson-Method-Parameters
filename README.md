@@ -315,6 +315,8 @@ The following practice problems focus only on methods with parameteres.
 ## Practice Problems
 Each problem increases in difficulty. Try to reason about what the method does and how to use parameters effectively. Be sure to test with different arguments!
 
+<br>
+
 ### Problem 1 — Repeat a Word
 Write a method that prints the same word a given number of times on separate lines.
 
@@ -340,6 +342,7 @@ Code
 Code
 ```
 
+<br>
 
 ### Problem 2 — Draw a Line of Characters
 Write a method that prints a line made up of a character repeated `n` times.
@@ -362,6 +365,7 @@ public class Problem2 extends ConsoleProgram {
 *****
 ----------
 ```
+<br>
 
 ### Problem 3 — Personalized Greeting
 Write a method that prints a greeting to a person, repeated as many times as you specify.
@@ -388,6 +392,7 @@ Hello, Bob!
 Hello, Bob!
 Hello, Bob!
 ```
+<br>
 
 ### Problem 4 — Only Evens
 Write a method that prints all even numbers up to a given number.
@@ -409,6 +414,7 @@ public class Problem4 extends ConsoleProgram {
 2 4 6 8 10
 ```
 
+<br>
 
 ### Problem 5 — Triangle of Symbols
 Write a method that prints a right triangle made of any symbol.
@@ -432,6 +438,7 @@ public class Problem5 extends ConsoleProgram {
 ###
 ####
 ```
+<br>
 
 ### Problem 6 — Hollow Diamond
 Write a method that prints a simple hollow diamond using spaces and `*`.  
@@ -457,6 +464,7 @@ public class Problem6 extends ConsoleProgram {
  * *
   *
 ```
+<br>
 
 ### Problem 7 — Word Triangle
 Write a method that prints a word as a triangle, one more character per line.
@@ -480,6 +488,7 @@ CO
 COD
 CODE
 ```
+<br>
 
 ### Problem 8 — Safe Divider
 Write a method that divides one number by another, but checks for division by zero first.
@@ -502,6 +511,8 @@ public class Problem8 extends ConsoleProgram {
 Result: 5
 Error: cannot divide by zero.
 ```
+
+<br>
 
 ### Problem 9 — Number Pattern
 Write a method that takes two integers: a **start** and an **end**.  
@@ -527,6 +538,7 @@ public class Problem9 extends ConsoleProgram {
 10 9 8 7 6
 ```
 
+<br>
 
 ### Problem 10 — Grade Bar Graph (Challenge)
 Write a method that prints a small bar graph for scores, right-aligning names and truncating long ones.  
